@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
 height :800px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+// display:flex;
+// flex-direction:column;
+// justify-content:center;
+// align-items:center;
 background:#010606;
-
+width: 100%;
+    overflow: hidden;
 @media screen and (max-width: 768px) {
     height:1100px;
 }
@@ -20,19 +21,22 @@ background:#010606;
 export const ServicesWrapper = styled.div`
 max-width:1000px;
 margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+display: flex;
+flex-direction:row;
+justify-content:space-around;
+// grid-template-columns: 1fr 1fr 1fr;
 align-items: center;
 grid-gap: 16px;
 padding: 0 50px;
+// margin-bottom: 16px;
 
 @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
+    // grid-template-columns: 1fr;
+    // padding: 0 20px;
 }
 `;
 

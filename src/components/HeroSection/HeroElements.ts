@@ -21,8 +21,8 @@ export const HeroContainer = styled.div<{ image: any }>`
         z-index: 1;
     }
     background-image: url(${props => props.image});
-background-repeat: round;
-background-size: auto;
+background-repeat: no-repeat;
+background-size: cover;
 
 @media screen and (max-width: 768px) {
     flex-direction: column;
