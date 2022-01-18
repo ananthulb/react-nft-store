@@ -106,3 +106,4 @@ dist
 #image
 *.jpg
 *.jpeg
+.DS_Store
