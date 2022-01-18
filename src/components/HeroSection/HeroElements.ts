@@ -4,10 +4,11 @@ import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 export const HeroContainer = styled.div<{ image: any }>`
     background: #0c0c0c;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px 30px;
-    height: 860px;
+    height: 100vh;
     z-index: 1;
     :before {
         content: "";
@@ -17,23 +18,29 @@ export const HeroContainer = styled.div<{ image: any }>`
         right: 0;
         bottom: 0;
         background: linear-gradient(180deg, rgb(0,0,0,0.2) 0%, rgb(0,0,0,0.6) 100%), linear-gradient(180deg, rgb(0,0,0,0.2) 0%, transparent 100%);
-        z-index: 2;
+        z-index: 1;
     }
     background-image: url(${props => props.image});
 background-repeat: round;
 background-size: auto;
+
+@media screen and (max-width: 768px) {
+    flex-direction: column;
+
+}
     `;
 
 export const HeroBg = styled.div`
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-width: 100%;
-height: 100%;
-overflow: hidden;
-display: contents;
+// position: absolute;
+// top: 0;
+// left: 0;
+// right: 0;
+// bottom: 0;
+// width: 100%;
+// height: 100%;
+// overflow: hidden;
+// display: contents;
+z-index: 2;
 `;
 
 export const VideoBg = styled.video`
@@ -116,7 +123,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-background:#010606;
+z-index:2;
 
 
 `;
@@ -129,86 +136,99 @@ align-items: center;
 
 
 @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
+    max-width:700px;
 }
 
 @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
+    max-width:400px;
+}
+@media screen and (max-width: 460px) {
+    max-width:300px;
 }
 `;
 
 export const ServicesCard1 = styled.div`
-background:#fff;
+background:#000;
 display:flex;
 flex-direction:column;
 justify-content:flex-start;
 align-items:center;
 border-radius:10px;
 max-height:340px;
-padding:30px;
+padding:5px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 transition: all 0.2s ease-in-out;
-width: 300px;
+// width: 300px;
 &:hover{
     transform : scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor:pointer;
 }
 transform: scale(0.8) rotate3d(2, 10, 2, -10deg);
+box-shadow: -5px 7px 7px 2px #2e2d2d;
+height:350px;
 `;
 export const ServicesCard2 = styled.div`
-background:#fff;
+background:#000;
 display:flex;
 flex-direction:column;
 justify-content:flex-start;
 align-items:center;
 border-radius:10px;
 max-height:340px;
-padding:30px;
+padding:5px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 transition: all 0.2s ease-in-out;
 margin-left:-200px;
-width: 300px;
+// width: 300px;
 transform: scale(0.9) rotate3d(2, 10, 2, -10deg);
-&:hover{
-    transform : scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor:pointer;
-}
+box-shadow: -5px 7px 7px 2px #2e2d2d;
+// &:hover{
+//     transform : scale(1.02);
+//     transition: all 0.2s ease-in-out;
+//     cursor:pointer;
+// }
+height:350px;
 `;
 export const ServicesCard3 = styled.div`
-background:#fff;
+background:#000;
 display:flex;
 flex-direction:column;
 justify-content:flex-start;
 align-items:center;
 border-radius:10px;
 max-height:340px;
-padding:30px;
+padding:5px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 transition: all 0.2s ease-in-out;
 margin-left:-200px;
-width: 300px;
+// width: 300px;
 transform: scale(1) rotate3d(2, 10, 2, -10deg);
-    
-&:hover{
-    transform : scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor:pointer;
-}
+box-shadow: -5px 7px 7px 2px #2e2d2d;   
+// &:hover{
+//     transform : scale(1.02);
+//     transition: all 0.2s ease-in-out;
+//     cursor:pointer;
+// }
+height:350px;
 `;
 
 export const ServicesIcon = styled.img`
-height: 160px;
-width: 160px;
+// height: 280px;
+width: 280px;
+border-radius:10px;
 margin-bottom:10px;
+
+@media screen and (max-width: 460px) {
+    max-width:200px;
+}
 `;
 
 export const ServicesH1 = styled.h1`
 font-size:2.5rem;
 color:#fff;
 margin-bottom:64px;
+color:#fff;
 
 @media screen and (max-width: 480px) {
     font-size:2rem;
@@ -218,10 +238,12 @@ margin-bottom:64px;
 export const ServicesH2 = styled.h2`
 font-size:1rem;
 margin-bottom:10px;
+color:#fff;
 `;
 
 export const ServicesP = styled.p`
 font-size:1rem;
 text-align:center;
+color:#fff;
 
 `;

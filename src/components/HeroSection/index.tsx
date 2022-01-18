@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroBtnWrapper, HeroH1, HeroP, ArrowForward, ArrowRight, ImageBg, ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard1, ServicesCard2, ServicesCard3, ServicesIcon, ServicesH2, ServicesP } from './HeroElements';
 import video from '../../video/video.mp4';
-import image from '../../images/hero.jpg';
+import image from '../../images/image3.jpg';
 import { Button } from '../ButtonElement';
-import Icon1 from '../../images/image1.svg'
-import Icon2 from '../../images/image1.svg'
-import Icon3 from '../../images/image1.svg'
+import Icon1 from '../../images/image4.jpeg'
+import Icon2 from '../../images/image4.jpeg'
+import Icon3 from '../../images/image4.jpeg'
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
     const onHover = () => {
@@ -20,18 +20,18 @@ const HeroSection = () => {
                     <ServicesWrapper>
                         <ServicesCard1>
                             <ServicesIcon src={Icon1} />
-                            <ServicesH2>Reduce Expences</ServicesH2>
-                            <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                            <ServicesH2>#3589</ServicesH2>
+                            {/* <ServicesP>#350</ServicesP> */}
                         </ServicesCard1>
                         <ServicesCard2>
                             <ServicesIcon src={Icon2} />
-                            <ServicesH2>Virtual Offices</ServicesH2>
-                            <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                            <ServicesH2>#3589</ServicesH2>
+                            {/* <ServicesP>You can access our platform online anywhere in the world.</ServicesP> */}
                         </ServicesCard2>
                         <ServicesCard3>
                             <ServicesIcon src={Icon3} />
-                            <ServicesH2>Premium Benefits </ServicesH2>
-                            <ServicesP>Unlock our special membership card that return.</ServicesP>
+                            <ServicesH2>#3589</ServicesH2>
+                            {/* <ServicesP>Unlock our special membership card that return.</ServicesP> */}
                         </ServicesCard3>
                     </ServicesWrapper>
                 </ServicesContainer>
