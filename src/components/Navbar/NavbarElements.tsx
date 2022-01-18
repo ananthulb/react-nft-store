@@ -37,7 +37,7 @@ export const NavLogo = styled(LinkR)`
         cursor:pointer;
         font-size:1.5rem;
         align-items:center;
-        margin-left:24px;
+        // margin-left:24px;
         font-weight:bold;
         text-decoration:none;
     `

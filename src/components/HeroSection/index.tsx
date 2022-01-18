@@ -21,23 +21,20 @@ const HeroSection = () => {
                         <ServicesCard1>
                             <ServicesIcon src={Icon1} />
                             <ServicesH2>#3589</ServicesH2>
-                            {/* <ServicesP>#350</ServicesP> */}
                         </ServicesCard1>
                         <ServicesCard2>
                             <ServicesIcon src={Icon2} />
                             <ServicesH2>#3589</ServicesH2>
-                            {/* <ServicesP>You can access our platform online anywhere in the world.</ServicesP> */}
                         </ServicesCard2>
                         <ServicesCard3>
                             <ServicesIcon src={Icon3} />
                             <ServicesH2>#3589</ServicesH2>
-                            {/* <ServicesP>Unlock our special membership card that return.</ServicesP> */}
                         </ServicesCard3>
                     </ServicesWrapper>
                 </ServicesContainer>
                 <HeroBg>
                     <HeroContent >
-                        <HeroH1>Virual Banking Made Easy</HeroH1>
+                        <HeroH1>Mint your ape today</HeroH1>
                         <HeroP>Sign up for a new account today and receive $250 in credut towards your next payment</HeroP>
                         <HeroBtnWrapper>
                             <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true" smooth={true} duration={500} spy={true} offset={-80}>Get started {hover ? <ArrowForward /> : <ArrowRight />}</Button>

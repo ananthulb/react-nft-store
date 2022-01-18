@@ -26,7 +26,7 @@ const Navbar = (props: any) => {
             <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to="/" onClick={toggleHome}>NFT
+                        <NavLogo to="/" onClick={toggleHome}>OPENLAKE
                         </NavLogo>
                         <MobileIcon onClick={props.toggle}>
                             <FaBars />
