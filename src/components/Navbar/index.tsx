@@ -3,8 +3,8 @@ import { FaBars } from 'react-icons/fa';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-const Navbar = (props: any) => {
 
+const Navbar = (props: any) => {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -18,6 +18,7 @@ const Navbar = (props: any) => {
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
     }, []);
+
     const toggleHome = () => {
         scroll.scrollToTop();
     }
