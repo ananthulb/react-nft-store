@@ -63,7 +63,7 @@ margin-bottom: 0.5rem;
 font-size: 14px;
 
 &:hover {
-    color:#01bf71;
+    color:#9063FF;
     transition : 0.3s ease-out;
 }
 `;

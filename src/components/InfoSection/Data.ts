@@ -1,53 +1,52 @@
-import image from '../../images/image1.svg';
+import icon1 from '../../images/icon1.svg';
+import icon2 from '../../images/icon2.svg';
+import icon3 from '../../images/icon3.svg';
 
-export const homeObjOne = {
+export const aboutObj = {
     id: 'about',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Bank',
-    headline: 'Unlimited Transactions with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unimited transactions without getting charged any fees.',
+    topLine: 'Premium Store',
+    headline: 'Unlimited Minting with zero fees',
+    description: 'Get access to our exclusive nft release that allows you to mint without getting charged any fees.',
     buttonLabel: 'Get started',
     imgStart: false,
-    img: image,
-    // img: 'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+    img: icon1,
     alt: 'About',
     dark: true,
     primary: true,
     darkText: false,
 };
 
-export const homeObjTwo = {
+export const discoverObj = {
     id: 'discover',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: 'Unlimited Access',
-    headline: 'Unlimited Transactions with zero fees',
+    headline: 'Unlimited Resales with zero fees',
     description: 'Get access to our exclusive app that allows you to send unimited transactions without getting charged any fees.',
     buttonLabel: 'Learn more',
     imgStart: true,
-    img: image,
-    // img: 'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+    img: icon2,
     alt: 'discover',
     dark: false,
     primary: false,
     darkText: true,
 };
 
-export const homeObjThree = {
+export const signupObj = {
     id: 'signup',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: 'Premium Bank',
     headline: 'Creating an account is extremely easy',
-    description: 'Get access to our exclusive app that allows you to send unimited transactions without getting charged any fees.',
+    description: 'Simply connect your existing ether wallet to our platform and start minting your nft.',
     buttonLabel: 'Start now',
     imgStart: false,
-    img: image,
-    // img: 'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+    img: icon3,
     alt: 'start',
     dark: false,
     primary: false,

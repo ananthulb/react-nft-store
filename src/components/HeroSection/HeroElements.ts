@@ -159,11 +159,11 @@ padding:5px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 transition: all 0.2s ease-in-out;
 // width: 300px;
-&:hover{
-    transform : scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor:pointer;
-}
+// &:hover{
+//     transform : scale(1.02);
+//     transition: all 0.2s ease-in-out;
+//     cursor:pointer;
+// }
 transform: scale(0.8) rotate3d(2, 10, 2, -10deg);
 box-shadow: -5px 7px 7px 2px #2e2d2d;
 // height:350px;

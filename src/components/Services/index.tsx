@@ -1,74 +1,29 @@
 import React from 'react'
-import Icon1 from '../../images/image1.svg'
-import Icon2 from '../../images/image1.svg'
-import Icon3 from '../../images/image1.svg'
-import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP } from './ServiceElements';
-import Slider from "react-slick";
-
+import Icon1 from '../../images/icon1.svg'
+import Icon2 from '../../images/icon2.svg'
+import Icon3 from '../../images/icon3.svg'
+import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP } from './ServiceElements'
 const Services = () => {
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1
-    };
     return (
-
         <ServicesContainer id="services">
             <ServicesH1>Our Services</ServicesH1>
-
-            {/* <ServicesWrapper> */}
-            <Slider {...settings}>
+            <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
                     <ServicesH2>Reduce Expences</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                    <ServicesP>We help reduce your burn fees and increase your overall revenue.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon2} />
-                    <ServicesH2>Virtual Offices</ServicesH2>
-                    <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                    <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesP>Exclusive early access to premium nft drops from top artists.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
-                    <ServicesH2>Premium Benefits </ServicesH2>
-                    <ServicesP>Unlock our special membership card that return 5% cash back.</ServicesP>
+                    <ServicesH2>24/7 Support Team </ServicesH2>
+                    <ServicesP>Dedicated support team to help you 24/7 all around the world.</ServicesP>
                 </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src={Icon1} />
-                    <ServicesH2>Reduce Expences</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src={Icon2} />
-                    <ServicesH2>Virtual Offices</ServicesH2>
-                    <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src={Icon3} />
-                    <ServicesH2>Premium Benefits </ServicesH2>
-                    <ServicesP>Unlock our special membership card that return 5% cash back.</ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src={Icon1} />
-                    <ServicesH2>Reduce Expences</ServicesH2>
-                    <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src={Icon2} />
-                    <ServicesH2>Virtual Offices</ServicesH2>
-                    <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src={Icon3} />
-                    <ServicesH2>Premium Benefits </ServicesH2>
-                    <ServicesP>Unlock our special membership card that return 5% cash back.</ServicesP>
-                </ServicesCard>
-            </Slider>
-
-            {/* </ServicesWrapper> */}
-
+            </ServicesWrapper>
         </ServicesContainer>
     )
 }

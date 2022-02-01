@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroBtnWrapper, HeroH1, HeroP, ArrowForward, ArrowRight, ImageBg, ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard1, ServicesCard2, ServicesCard3, ServicesIcon, ServicesH2, ServicesP } from './HeroElements';
-import video from '../../video/video.mp4';
-import image from '../../images/image3.jpg';
+import image from '../../images/hero-background.jpg';
 import { Button } from '../ButtonElement';
 import Icon1 from '../../images/image4.jpeg'
 import Icon2 from '../../images/image4.jpeg'
@@ -11,7 +10,6 @@ const HeroSection = () => {
     const onHover = () => {
         setHover(!hover);
     }
-    console.log('HeroSection video', video);
     return (
         <>
             <HeroContainer id="home" image={image}>

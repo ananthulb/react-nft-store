@@ -10,7 +10,7 @@ right:0;
 top:0;
 z-index:0;
 overflow:hidden;
-background: linear-gradient(108deg, rgb(1,147,86,1) 0%, rgba(10,202,122,1) 100%);
+background: linear-gradient(108deg, rgb(59 167 165) 0%, rgb(144 99 255) 100%);
 `;
 
 export const FormWrap = styled.div`
@@ -88,7 +88,7 @@ border-radius:4px;
 `;
 
 export const FormButton = styled.button`
-background: #01bf71;
+background: #9063FF;
 padding:16px 0px;
 border:none;
 border-radius:4px;
