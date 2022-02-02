@@ -103,7 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-#image
-*.jpg
-*.jpeg
+#other
 .DS_Store
