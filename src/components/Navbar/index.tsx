@@ -47,7 +47,8 @@ const Navbar = (props: any) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to="signin">Sign in</NavBtnLink>
+                            {/* <NavBtnLink to="signin">Sign in</NavBtnLink> */}
+                            <NavBtnLink to="list">Task List</NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
                 </Nav>

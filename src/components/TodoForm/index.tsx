@@ -6,7 +6,7 @@ import axios from 'axios';
 const TodoForm: React.FC<any> = ({ taskObj, setLoading, updateTask }) => {
     const [task, setTask] = useState<string>('');
     const [actionType, setActionType] = useState<boolean>(false);
-
+    const cancelBtnstyle = { 'marginTop': '10px', 'backgroundColor': '#6e6d6e' };
 
     const handleChange = (e: any) => {
         setTask(e.target.value);
@@ -77,15 +77,15 @@ const TodoForm: React.FC<any> = ({ taskObj, setLoading, updateTask }) => {
     }
     return (
         <>
-            <FormH1>Add Todo List</FormH1>
-            <FormLabel htmlFor='for'>Email</FormLabel>
+            <FormH1>Add Task</FormH1>
+            <FormLabel htmlFor='for'>Title</FormLabel>
             <FormInput type='email' placeholder='Title' required value={task}
                 onChange={handleChange} />
             {
                 actionType ?
                     <>
                         <FormButton type='submit' value='Edit' onClick={editTask}>Edit</FormButton>
-                        <FormButton type='submit' value='Edit' style={{ 'marginTop': '10px' }} onClick={cancelEdit}>Cancel</FormButton>
+                        <FormButton type='submit' value='Edit' style={cancelBtnstyle} onClick={cancelEdit}>Cancel</FormButton>
                     </>
                     :
                     <FormButton type='submit' value='Add' onClick={addTask}>Add</FormButton>

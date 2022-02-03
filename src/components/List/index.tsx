@@ -76,7 +76,7 @@ const List = () => {
                     <ListContent>
                         <Table >
                             <TodoForm taskObj={task} setLoading={setLoading} updateTask={updateTask} />
-                            <ListH1>Todo List</ListH1>
+                            <ListH1>Task List</ListH1>
                             <ListContainer>
                                 {
                                     todoList
